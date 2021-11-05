@@ -37,7 +37,7 @@
     <!-- end CSS-->
     
     <script src="lib/js/jquery-1.11.1.min.js"></script>
-    <script src="lib/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="lib/js/jquery-migrate-1.2.1.js"></script>
     
 </head>
 
@@ -188,15 +188,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
                         
                         <!--begin threecol -->
                         <div class="threecol last">
-                        	<span>
-                                <i class="fa fa-clock-o fa-3x"></i>
-                            <!-- <?xml version="1.0" encoding="utf-8"?>
-                            <svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1024 544v448q0 14-9 23t-23 9h-320q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224v-352q0-14 9-23t23-9h64q14 0 23 9t9 23zm416 352q0-148-73-273t-198-198-273-73-273 73-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273zm224 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
-                                    fill="#fff" />
-                            </svg> -->
-                            </span>
+                        	<span><i class="fa fa-clock-o fa-3x"></i></span>
                             <p class="event_info"><span>مدة الدورة </span><br>8 ساعات مكثف</p>
                         </div>
                         <!--end threecol -->
@@ -433,7 +425,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
                                 
                                     <div class="testimonials_box">
                                         <p>"ساعدتني هذه الدورة والشهادة كثيرا في ايجاد عمل وتوظيفي في شركة ممتازة. أثناء مقابلتي في العمل قام المدير بالاستفسار عن المهارات التي أمتلكها وفعلا كانت مهارة التسويق الالكتروني أكثر ما اهتم به المدراء وميزتني عن باقي مقدمين الطلبات . شكرا لكم ويعطيكم العافية ."</p>
-                                    	<img src="lib/images/tes1.jpg" alt="Picture" class="autor_pic">
+                                    	<img data-src="lib/images/tes1.jpg" alt="Picture" class="autor_pic lazyload">
                                         <span class="testimonials_arrow"></span>
                                     </div>
                                     
@@ -459,7 +451,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
                                 
                                     <div class="testimonials_box">
                                         <p>"مسرورة جدا من نفسي ومن الانجاز الذي حققته من أجل شركتي ، لقد اكسبتني هذه الدورة مهارة متقدمة مكنتني من عمل اعلانات على سناب شات غيرت بشكر كبير وملحوظ اقبال الناس للشراء من شركتنا، شكرا لكم"</p>
-                                    	<img src="lib/images/tes2.jpg" alt="Picture" class="autor_pic">
+                                    	<img data-src="lib/images/tes2.jpg" alt="Picture" class="autor_pic lazyload">
                                         <span class="testimonials_arrow"></span>
                                     </div>
                                     
@@ -485,7 +477,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
                                 
                                     <div class="testimonials_box">
                                         <p>"شكرا للقائمين على الدورة، دورة جميلة ورائعة بارك الله فيكم، تعلمت كيف اعمل اعلانات والحمد الله انا اعمل اعلانات لشركتي الخاصة وابيع منتجات اونلاين من المنزل، كل الاحترام والتقدير لكم ."</p>
-                                        <img src="lib/images/tes3.jpg" alt="Picture" class="autor_pic">
+                                        <img data-src="lib/images/tes3.jpg" alt="Picture" class="autor_pic lazyload">
                                         <span class="testimonials_arrow"></span>
                                     </div>
                                     
@@ -548,7 +540,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
                         	
                             <!--begin eightcol -->
                             <div class="eightcol">
-                            	<img style="" src="https://bristol-academy.com/scholarship/smm-free/lib/images/smm-cer.jpeg" width="600px;" alt="Picture">
+                            	<img class="lazyload" data-src="https://bristol-academy.com/scholarship/smm-free/lib/images/smm-cer.jpeg" width="600px;" alt="Picture">
                             </div>
                             <!--end eightcol -->
                     
@@ -737,12 +729,13 @@ form#WebToLeadForm span.required {color: #FF0000;}
     
     <!-- scripts concatenated and minified via ant build script-->
     <script src="lib/js/modernizr-2.6.1.min.js"></script>
-    <script src="lib/js/conditional.min.js"></script>
-    <script src="lib/js/plugins.min.js"></script>
-    <script src="lib/js/script.min.js"></script>
+    <script src="lib/js/conditional.js"></script>
+    <script src="lib/js/plugins.js"></script>
+    <script src="lib/js/script.js"></script>
+    <script src="lib/js/lazysizes.min.js" async></script>
     
     <!-- begin jquery.sticky script-->
-    <script type="text/javascript" src="lib/js/jquery.sticky.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.sticky.js"></script>
 		<script>
         $(window).load(function(){
           $("#header_wrapper").sticky({ topSpacing: 0 });
@@ -751,7 +744,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
     <!-- end jquery.sticky script-->
   
     <!-- begin menu scrollTo script-->
-    <script src="lib/js/jquery.scrollTo-min.min.js"></script>
+    <script src="lib/js/jquery.scrollTo-min.js"></script>
     <script type="text/javascript">
 		(function($){
 			$(document).ready(function() {	
@@ -776,7 +769,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
 	<!-- end menu scrollTo script-->
     
     <!-- begin menu color script-->
-    <script src="lib/js/jquery.nav.min.js"></script>
+    <script src="lib/js/jquery.nav.js"></script>
 	<script>
 	$(document).ready(function() {
 		$('#nav').onePageNav({
@@ -808,7 +801,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
     <!--end shrink header script -->
     
     <!--begin fitvids script -->
-    <script src="lib/js/jquery.fitvids.min.js"></script>
+    <script src="lib/js/jquery.fitvids.js"></script>
 	<script>
 		// Basic FitVids Test
 		$("#container").fitVids();
@@ -818,7 +811,7 @@ form#WebToLeadForm span.required {color: #FF0000;}
     <!--end fitvids script -->
     
     <!-- begin owl.carousel script-->
-    <script src="lib/js/owl.carousel.min.js"></script>
+    <script src="lib/js/owl.carousel.js"></script>
     <script>
     $(document).ready(function($) {
       $("#owl-example").owlCarousel();
