@@ -14,6 +14,9 @@
     ExpiresByType video/mp4 "access plus 1 year"
     ExpiresByType video/mpeg "access plus 1 year"
 
+    # Fonts
+    ExpiresByType font/ttf "access plus 1 year"
+    
     # CSS, JavaScript
     ExpiresByType text/css "access plus 1 week"
     ExpiresByType text/javascript "access plus 1 month"
@@ -26,8 +29,8 @@
 
 # BROWSER CACHING USING CACHE-CONTROL HEADERS
 <ifModule mod_headers.c> 
-    # One year for image and video files
-    <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp)$">
+    # One year for image, fonts and video files
+    <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp|ttf)$">
         Header set Cache-Control "max-age=31536000, public"
     </filesMatch>
 
