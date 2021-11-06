@@ -1149,11 +1149,16 @@ p.success_box {
   position: relative;
   width: 100%;
   z-index: 10;
-  background: url(../images/1.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+.no-webp .parallax_wrapper {
+  background: url(../images/1.jpg) center top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+.webp .parallax_wrapper {
+  background: url(../images/1.webp) center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .parallax_box {
   width: 100%;
