@@ -1556,6 +1556,30 @@ a.contact_details {
     background-size: cover;
     background-repeat: no-repeat;
   }
+    .no-webp #intro{
+    background-attachment: scroll;
+  }
+  .no-webp .newsletter_wrapper{
+    background-attachment: scroll;
+  }
+  .no-webp .parallax_wrapper{
+    background-attachment: scroll;
+  }
+  .no-webp .contact_wrapper{
+    background-attachment: scroll;
+  }
+  .webp #intro{
+    background-attachment: scroll;
+  }
+  .webp .newsletter_wrapper{
+    background-attachment: scroll;
+  }
+  .webp .parallax_wrapper{
+    background-attachment: scroll;
+  }
+  .webp .contact_wrapper{
+    background-attachment: scroll;
+  }
 }
 @media (min-width: 768px) {
   .container {
